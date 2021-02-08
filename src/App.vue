@@ -1,14 +1,17 @@
 <template>
   <div id="app">
-      <navbar />
-      <router-view/>
+    <navbar/>
+    <router-view/>
+    <page-footer />
   </div>
 </template>
 <script>
 import navbar from './components/Navbar'
+import pageFooter from './components/Footer'
 export default {
   components: {
-    navbar
+    navbar,
+    pageFooter
   }
 }
 </script>

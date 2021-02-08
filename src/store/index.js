@@ -22,7 +22,7 @@ export default new Vuex.Store({
             const tasks = state.tasks.concat() // new copy of massive
             const idx = tasks.findIndex(t => t.id === id) // find index in modify task
             const task = tasks[idx] // current task which update
-            const status = new Date(date) > new Date() ? 'active' : 'expired' // check current date and comparsion with task date & give it status
+            const status = new Date(date) > new Date() ? 'active' : 'expired' // check current date and comparison with task date & give it status
 
             tasks[idx] = {...task, description, date, status} // new object with all
 
